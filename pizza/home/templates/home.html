@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block start %}
+<div class="container mt-5">
+    <h5><i class="fas fa-location fa-spin fa-lg"></i> Your Delivary Location</h5>
+    <h6>{{city}}, {{region}}, {{country}}</h6>
+    <br>
+    <form action="predict">
+        <input type="submit" class="btn btn-warning" value="Can't Decide what to order? Let's Predict !">
+    </form>
+    <br>
+    <div class="row">
+        {% for pizza in pizzas %}
+        <div class="col-lg-4 mb-5">
+            <div class="card shadow-lg" style="width: 18rem;">
+                <img src="/media/{{pizza.images}}" style="height: 220px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{pizza.pizza_name}}</h5>
+                    <p>Price - {{pizza.price}} | Category {{pizza.category.category_name}}</p>
+                    <a href="{% url 'add_cart' pizza.uid %}" class="btn btn-success">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="#" class="btn btn-primary">20% discount</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

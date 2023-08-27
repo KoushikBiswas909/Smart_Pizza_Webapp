@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block start %}
+    <div align="center" class="main">
+        <h1>Please Enter the following information</h1>
+        <br>
+        <form action="result">
+            <table>
+                <tr>
+                    <td align="right">Mood</td>
+                    <td align="left">
+                        <select name="n1">
+                            <option value=0>Happy</option>
+                            <option value=1>Angry</option>
+                            <option value=2>Anxiety</option>
+                            <option value=3>Love</option>
+                            <option value=4>Guilt</option>
+                            <option value=5>Interest</option>
+                            <option value=6>Sad</option>
+                            <option value=7>Disgust</option>
+                            <option value=8>Depresesd</option>
+                            <option value=9>Embarrassed</option>
+                            <option value=10>Fear</option>
+                            <option value=11>Surprise</option>
+                            <option value=12>Satisfaction</option>
+                            <option value=13>Shame</option>
+                            <option value=14>Pride</option>
+                            <option value=15>Lonely</option>
+                            <option value=16>Self-Hostility</option>
+                            <option value=17>Shyness</option>
+                            <option value=18>Mix_emotion</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Mood Lebel</td>
+                    <td align="left">
+                        <select name="n2">
+                            <option value=0>Low</option>
+                            <option value=1>Normal</option>
+                            <option value=2>Extrme</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Gender</td>
+                    <td align="left">
+                        <select name="n3">
+                            <option value=0>Male</option>
+                            <option value=1>Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Age</td>
+                    <td align="left"><input type="text" name="n4"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit">
+        </form>
+        <br>
+        <h5>Yahoooo!!! You can try this !</h5>
+        <button type="button" class="btn btn-success">{{result1}}</button>
+    </div>
+    {% endblock %}
