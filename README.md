@@ -1,4 +1,4 @@
-# Project Name: Smart Pizza Delivery WebApp
+# PizzaPy: Smart Pizza Delivery WebApp
 
 Welcome to our project!
 Aspiring to showcase my proficiency in full-stack web development, I undertook the creation of a dynamic Pizza Ecommerce Web Application that seamlessly integrates user-centric features and innovative suggestions. This project showcases a robust implementation of both front-end and back-end technologies, employing the Python Django framework for the server-side logic and HTML, CSS, and Bootstrap for the user interface.
