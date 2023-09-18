@@ -1,0 +1,5 @@
+Django==3.2.13
+instamojo_wrapper==1.2.0
+pandas==1.4.2
+Requests==2.31.0
+scikit_learn==1.2.2
